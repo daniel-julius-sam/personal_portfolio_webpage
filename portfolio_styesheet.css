@@ -1,0 +1,57 @@
+figure {
+    margin: 0 0;
+}
+body {
+
+    margin: 0 0;
+}
+
+nav {
+    background-color: #be3144;
+    position: fixed;
+    top: 0;
+}
+
+#introduction {
+    background-color: #202023;
+    margin-top: 20px;
+    height: 600px;
+    width: auto;
+    text-align: center;
+
+}
+
+#s1 {
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    top: 200px;
+}
+#s2 {
+    color: #be3144;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 200px;
+    font-style: italic;
+}
+
+
+#projects {
+    background-color: #45567d;
+}
+
+#contact {
+    background-color: #303841;
+}
+
+footer {
+    background-color: #303841;
+    border-top: 6px solid #be3144;
+}
+
+#contact h1 {
+    margin-top: 0px;
+}
+
+
