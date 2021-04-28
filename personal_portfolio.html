@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href='portfolio_styesheet.css'>
+        <link rel='stylesheet' href='portfolio_styesheet.css'>
     </head>
     <body>
         <nav>
-            <a href='https://cdpn.io/freeCodeCamp/fullpage/zNBOYG#welcome-section'>About</a>
-            <a href='https://cdpn.io/freeCodeCamp/fullpage/zNBOYG#projects'>Work</a>
-            <a href='https://cdpn.io/freeCodeCamp/fullpage/zNBOYG#contact'>Contact</a>
+            <div id='nav-contents'>
+                <div class='link'>
+                    <a href='https://cdpn.io/freeCodeCamp/fullpage/zNBOYG#welcome-section'>About</a>
+                </div>
+                <div class='link'>
+                    <a href='https://cdpn.io/freeCodeCamp/fullpage/zNBOYG#projects'>Work</a>
+                </div>
+                <div class='link' id='nav-contact'>
+                    <a href='https://cdpn.io/freeCodeCamp/fullpage/zNBOYG#contact'>Contact</a>
+                </div> 
+                </div>
         </nav>
 
-        <div id='introduction'>
-            <span>Hey I am Mimic</span><span>a web developer</span> 
+        <div id='introduction' class='divs'>
+            <span id='s1'>Hey I am Mimic</span><span id="s2"><br>a web developer</span> 
         </div>
 
-        <div id='projects'>
+        <div id='projects' class='divs'>
             <figure>
                 <img src='https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg' alt="Dr.Norman Borlaugh's Tribute webpage"/>
                 <figcaption>Tribute Page</figcaption>
@@ -48,7 +56,7 @@
             <a href='https://codepen.io/FreeCodeCamp/'>Show all ></a>
         </div>
 
-        <div id='contact'>
+        <div id='contact' class='divs'>
             <h1>
                 Let's work together...
             </h1>
@@ -57,7 +65,7 @@
                 How do you take your coffee?
             </h4>
         
-            <div id='links'>
+            <div id='links' class='divs'>
                 <a href="https://facebook.com/freecodecamp">Facebook</a>
                 <a href="https://github.com/freecodecamp">Github</a>
                 <a href="https://twitter.com/freecodecamp">Twitter</a>
@@ -66,7 +74,7 @@
             </div>
         </div>
 
-        <footer>
+        <footer class='divs'>
             <span>**This is just a fake portfolio. All the projects and contact details given are not real. </span>
             <span>© Created for freeCodeCamp </span>
         </footer>
