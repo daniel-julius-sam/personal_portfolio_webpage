@@ -54,7 +54,7 @@ nav a {
 
 
 #introduction {
-    background-color: #202023;
+    background: linear-gradient(#323437, #1c1c1e);
     margin-top: 20px;
     height: 600px;
     width: auto;
