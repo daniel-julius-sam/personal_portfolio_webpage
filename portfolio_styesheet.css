@@ -131,5 +131,36 @@ footer {
 }
 
 #span1 {
-    width: 50%
+    width: 50%;
+}
+
+#projects img {
+    width: 100%;
+}
+#projects {
+    display: grid;
+    grid-template-areas: 'a a';
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0px;
+    background-color: #303841;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+figcaption:hover {
+    font-size: 0;
+}
+figcaption:hover:before {
+    font-size: 20px;
+    content: attr(data-hover);
+    color: orangered;
 }
