@@ -78,10 +78,6 @@ nav a {
     background-color: #45567d;
 }
 
-#contact {
-    background-color: #303841;
-}
-
 footer {
     background-color: #303841;
     border-top: 6px solid #be3144;
@@ -93,12 +89,13 @@ footer {
     color: white;
     font-size: 60px;
     position: relative;
-    top: 180px;
+    top: 130px;
     font-weight: 500;
 }
 
 #contact {
-    height: 500px;
+    height: 450px;
+    background-color: #303841;
 }
 
 #contact h4 {
@@ -106,7 +103,7 @@ footer {
     font-size: 20px;
     text-align: center;
     position: relative;
-    top: 150px;
+    top: 110px;
     font-style: italic;
     font-weight: 100;
 }
@@ -141,11 +138,16 @@ img {
 #projects {
     display: grid;
     grid-template-columns: 350px 350px;
-    grid-template-rows: 300px 320px 350px;
+    grid-template-rows: 330px 325px 368px;
     grid-gap: 25px;
     padding-top: 50px;
     justify-content:center;
     padding-bottom: 50px;
+}
+
+#projects img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 #show-all {
@@ -166,6 +168,8 @@ img {
 #links {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    top: 10px;
 }
 #links a {
     text-decoration: none;
