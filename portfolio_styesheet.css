@@ -135,6 +135,23 @@ footer {
     width: 50%;
 }
 
+@media (max-width: 600px) {
+    footer {
+        height: 150px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    #span1 {
+        width: 70%;
+    }
+    
+}
+
 img {
     height: 100%;
 }
