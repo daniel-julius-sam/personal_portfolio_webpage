@@ -94,7 +94,7 @@ footer {
 }
 
 #contact {
-    height: 450px;
+    height: 500px;
     background-color: #303841;
 }
 
@@ -150,6 +150,23 @@ img {
     object-fit: cover;
 }
 
+@media (min-width: 800px) {
+    #projects {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 330px 325px 368px;
+        grid-gap: 25px;
+        padding-top: 50px;
+        justify-content:center;
+        padding-bottom: 50px;
+    }
+    
+    #projects img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
 #show-all {
     text-decoration: none;
     color: white;
@@ -167,18 +184,38 @@ img {
 
 #links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     position: relative;
     top: 10px;
 }
 #links a {
     text-decoration: none;
-    
 }
+
+@media (max-width: 500px) {
+    #links {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    #links a {
+       margin-top: 20px;
+    }
+
+    #contact {
+        height: 570px;
+        background-color: #303841;
+    }
+
+}
+
+
 
 #fa-fa-facebook {
     background-color: rgb(24, 24, 211);
-    padding: 20px 25px
+    padding: 20px 25px;
 }
 
 #fa-fa-github {
