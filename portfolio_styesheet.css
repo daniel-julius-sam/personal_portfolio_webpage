@@ -78,10 +78,6 @@ nav a {
     background-color: #45567d;
 }
 
-#contact {
-    background-color: #303841;
-}
-
 footer {
     background-color: #303841;
     border-top: 6px solid #be3144;
@@ -93,12 +89,15 @@ footer {
     color: white;
     font-size: 60px;
     position: relative;
-    top: 180px;
+    top: 130px;
     font-weight: 500;
+    left: 3%;
+    right: 3%;
 }
 
 #contact {
     height: 500px;
+    background-color: #303841;
 }
 
 #contact h4 {
@@ -106,9 +105,11 @@ footer {
     font-size: 20px;
     text-align: center;
     position: relative;
-    top: 150px;
+    top: 110px;
     font-style: italic;
     font-weight: 100;
+    left: 2%;
+    right: 3%;
 }
 #contact a {
     color: white;
@@ -131,5 +132,177 @@ footer {
 }
 
 #span1 {
-    width: 50%
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: 150px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    #span1 {
+        width: 70%;
+    }
+    
+}
+
+img {
+    height: 100%;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 330px 325px 368px;
+    grid-gap: 25px;
+    padding-top: 50px;
+    justify-content:center;
+    padding-bottom: 50px;
+}
+
+#projects img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#show-all {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: 320px;
+    top: 10px;
+    background-color: #303841;
+    width: 100px;
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+@media (max-width: 750px) {
+    #projects {
+        display: grid;
+        grid-template-columns: 350px ;
+        grid-template-rows: 330px 325px 368px 330px 325px 368px;
+        grid-gap: 25px;
+        padding-top: 50px;
+        justify-content:center;
+        padding-bottom: 50px;
+    }
+    
+    #projects img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    #show-all {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        left: 120px;
+        top: 10px;
+        background-color: #303841;
+        width: 100px;
+        padding: 10px 15px;
+        font-weight: 700;
+        border-radius: 2px;
+    }
+}
+
+
+#links {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 10px;
+    left: 3%;
+    right: 3%;
+}
+#links a {
+    text-decoration: none;
+}
+
+#fa-fa-phone {
+    margin-right: 0px;
+}
+
+@media (max-width: 500px) {
+    #links {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex-wrap: wrap;
+        
+    }
+
+    #links a {
+       margin-top: 20px;
+    }
+
+    #contact {
+        height: 570px;
+        background-color: #303841;
+    }
+
+}
+
+
+
+#fa-fa-facebook {
+    background-color: rgb(24, 24, 211);
+    padding: 20px 25px;
+}
+
+#fa-fa-github {
+    background-color: grey;
+    padding: 20px 23px;
+}
+
+#fa-fa-twitter {
+    background-color: rgb(66, 159, 190);
+    padding: 20px 22px;
+}
+
+#fa-fa-envelope {
+    background-color: black;
+    padding: 20px;
+}
+
+#fa-fa-phone {
+    background-color: green;
+    padding: 20px 22px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0px;
+    background-color: #303841;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+figcaption:hover {
+    font-size: 0;
+}
+figcaption:hover:before {
+    font-size: 20px;
+    content: attr(data-hover);
+    color: orangered;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
