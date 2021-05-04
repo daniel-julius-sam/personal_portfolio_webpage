@@ -91,6 +91,8 @@ footer {
     position: relative;
     top: 130px;
     font-weight: 500;
+    left: 3%;
+    right: 3%;
 }
 
 #contact {
@@ -106,6 +108,8 @@ footer {
     top: 110px;
     font-style: italic;
     font-weight: 100;
+    left: 2%;
+    right: 3%;
 }
 #contact a {
     color: white;
@@ -150,23 +154,6 @@ img {
     object-fit: cover;
 }
 
-@media (min-width: 800px) {
-    #projects {
-        display: grid;
-        grid-template-columns: 350px 350px;
-        grid-template-rows: 330px 325px 368px;
-        grid-gap: 25px;
-        padding-top: 50px;
-        justify-content:center;
-        padding-bottom: 50px;
-    }
-    
-    #projects img {
-        max-width: 100%;
-        object-fit: cover;
-    }
-}
-
 #show-all {
     text-decoration: none;
     color: white;
@@ -182,14 +169,55 @@ img {
     border-radius: 2px;
 }
 
+@media (max-width: 750px) {
+    #projects {
+        display: grid;
+        grid-template-columns: 350px ;
+        grid-template-rows: 330px 325px 368px 330px 325px 368px;
+        grid-gap: 25px;
+        padding-top: 50px;
+        justify-content:center;
+        padding-bottom: 50px;
+    }
+    
+    #projects img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    #show-all {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        left: 120px;
+        top: 10px;
+        background-color: #303841;
+        width: 100px;
+        padding: 10px 15px;
+        font-weight: 700;
+        border-radius: 2px;
+    }
+}
+
+
 #links {
     display: flex;
     justify-content: center;
     position: relative;
+    width: 100%;
+    margin: 0 auto;
     top: 10px;
+    left: 3%;
+    right: 3%;
 }
 #links a {
     text-decoration: none;
+}
+
+#fa-fa-phone {
+    margin-right: 0px;
 }
 
 @media (max-width: 500px) {
@@ -198,6 +226,7 @@ img {
         justify-content: center;
         position: relative;
         flex-wrap: wrap;
+        
     }
 
     #links a {
